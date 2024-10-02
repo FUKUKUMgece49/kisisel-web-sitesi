@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>İletişim Formu</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #bcfffe;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label,
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    button[type="submit"] {
+      background-color: #00760a;
+      color: rgb(255, 224, 177);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #00760a;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+
+  <form action="iletisim.php" method="post">
+    <label for="isim">Adınız:</label>
+    <input type="text" id="isim" name="isim" placeholder="Adınızı giriniz" required>
+
+    <label for="soyisim">Soyadınız:</label>
+    <input type="text" id="soyisim" name="soyisim" placeholder="Soyadınızı giriniz" required>
+
+    <label for="eposta">E-posta Adresiniz:</label>
+    <input type="email" id="eposta" name="eposta" placeholder="E-posta adresinizi giriniz" required>
+
+    <label for="konu">Konu:</label>
+    <input type="text" id="konu" name="konu" placeholder="Konuyu giriniz" required>
+
+    <label for="mesaj">Mesajınız:</label>
+    <textarea id="mesaj" name="mesaj" placeholder="Mesajınızı giriniz" rows="5" required></textarea>
+
+    <button type="submit">Viiyyyyy gitti...</button>
+  </form>
+</body>
+</html>

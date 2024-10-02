@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url("/arkaplan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    border-radius: 50%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar ul li {
+    margin-left: 24px; 
+    text-transform: uppercase; /* Tüm yazıları büyük harfe dönüştürdüm */
+  }
+  
+  .navbar ul li:first-child {
+    margin-left: auto; 
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .navbar ul li a:hover {
+    color: #000000; 
+  }
+  
+  .content {
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  
+  .section-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .info-table {
+    margin-bottom: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #333;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .bio {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .bio h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .bio p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
